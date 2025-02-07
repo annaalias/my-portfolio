@@ -1,0 +1,198 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1a1a2e, #16213e);
+    color: #f5f5f5;
+    overflow-y: auto;
+}
+
+/* Fixed Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(10, 10, 20, 0.95);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Prevent content from hiding behind the header */
+body {
+    padding-top: 90px; 
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4a261;
+    border-bottom: 2px solid #f4a261;
+}
+
+/* Dropdown Menu */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background: rgba(20, 20, 40, 0.95);
+    list-style: none;
+    padding: 10px;
+    width: 220px;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li:hover ul,
+nav ul li:focus-within ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+    margin: 0;
+}
+
+nav ul li ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+nav ul li ul li a:hover {
+    background: #f4a261;
+    color: black;
+}
+
+/* Sections with Card Styling */
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-margin-top: 100px;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Profile Image */
+.profile-pic {
+    display: block;
+    margin: 20px auto;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #f4a261;
+}
+
+/* Heading Styles */
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #f4a261;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px 0;
+    font-size: 18px;
+}
+
+/* Contact Section */
+#contact p {
+    text-align: center;
+    font-size: 18px;
+}
+
+#contact a {
+    color: #f4a261;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    section {
+        width: 90%;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Alias - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Anna Alias</h1>
+        <p>Social Work Professional | Sustainability Advocate | Community Development Specialist</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#professional-journey">Professional Journey</a></li>
+                <li><a href="#projects">Key Projects</a></li>
+                <li><a href="#research">Research & Achievements</a></li>
+                <li><a href="#memberships">Memberships</a></li>
+                <li><a href="#future">Future Aspirations</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>With a passion for social work and sustainability, I have dedicated my career to empowering communities, fostering environmental stewardship, and implementing impactful development programs. My journey has taken me through diverse roles in project management, volunteer engagement, and corporate social responsibility (CSR) initiatives.</p>
+    </section>
+
+    <!-- Professional Journey -->
+    <section id="professional-journey">
+        <h2>Professional Journey</h2>
+
+        <div class="job">
+            <h3>ACDSSS Agra</h3>
+            <p>My first professional experience in rural development helped me understand:</p>
+            <ul>
+                <li>Rural Development Practices</li>
+                <li>Program Management</li>
+                <li>Community-Led Projects (Project Samvad)</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>ExNoRa International</h3>
+            <p>My work at ExNoRa focused on sustainability and community impact:</p>
+            <ul>
+                <li>Led 32 CSR projects on environmental conservation, wellness, hygiene, and education.</li>
+                <li>Engaged in proposal writing, project implementation, and monitoring.</li>
+                <li>Contributed to 10+ environmental and sustainability projects.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h3>IIHS (Indian Institute for Human Settlements)</h3>
+            <p>Currently working on sustainability, fundraising, and corporate donor engagement.</p>
+            <ul>
+                <li>Engaged in research on urban planning, sanitation, and waste management.</li>
+                <li>Developed partnerships with HNIs and corporate sponsors.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section id="projects">
+        <h2>Key Projects & Initiatives</h2>
+
+        <div class="project">
+            <h3>Integrated Child Development Services (ICDS), Kerala</h3>
+            <p>Conducted fieldwork on early childhood programs and adolescent life skills training.</p>
+        </div>
+
+        <div class="project">
+            <h3>Peace Mission - Guardian Angel Palliative Care Center</h3>
+            <p>Established a library for cancer patients and conducted book donation campaigns.</p>
+        </div>
+
+        <div class="project">
+            <h3>Nehru Yuva Kendra Sangathan (NYKS), Wayanad</h3>
+            <p>Led disaster management initiatives and conducted water conservation campaigns.</p>
+        </div>
+    </section>
+
+    <!-- Research & Achievements -->
+    <section id="research">
+        <h2>Research & Achievements</h2>
+
+        <div class="research-item">
+            <h3>Dissertation: Evolution of Meenachil River Protection Council</h3>
+            <p>Analyzed a grassroots environmental movement's impact and policy-level interventions.</p>
+        </div>
+
+        <div class="research-item">
+            <h3>Certifications & Conferences</h3>
+            <ul>
+                <li>Certification in Psychological First Aid & Disaster Management</li>
+                <li>UN Replica 2020 (International Affairs Workshop)</li>
+                <li>Life-Saving Techniques Training (CPR, First Aid)</li>
+                <li>Participation in Social Work Conferences</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Memberships -->
+    <section id="memberships">
+        <h2>Memberships & Leadership Roles</h2>
+        <ul>
+            <li>Member, Kerala Association of Professional Social Workers (KAPS)</li>
+            <li>Secretary, Arts Club, Loyola College of Social Sciences</li>
+            <li>Active participant in community development forums</li>
+        </ul>
+    </section>
+
+    <!-- Future Aspirations -->
+    <section id="future">
+        <h2>Future Aspirations</h2>
+        <p>My goal is to bridge the gap between corporate initiatives and grassroots community development, ensuring long-term impact through policy advocacy, research, and program implementation.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Connect With Me</h2>
+        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/your-profile" target="_blank">linkedin.com/in/your-profile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Anna Alias | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdownToggle = document.querySelector(".dropdown-toggle");
+            const dropdownMenu = document.querySelector(".dropdown-menu");
+            
+            dropdownToggle.addEventListener("click", function(event) {
+                event.preventDefault();
+                dropdownMenu.style.display = (dropdownMenu.style.display === "block") ? "none" : "block";
+                event.stopPropagation();
+            });
+
+            document.addEventListener("click", function(event) {
+                if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

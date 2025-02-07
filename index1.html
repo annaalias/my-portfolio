@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Alias - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anna Alias</h1>
+        <p>Social Work | Community Development | Project Management</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li>
+                    <a href="#" class="dropdown-toggle">Projects ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#project1">Community Development</a></li>
+                        <li><a href="#project2">Environmental Sustainability</a></li>
+                        <li><a href="#project3">Women Empowerment</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <section id="home">
+        <img src="profile.jpg" alt="Anna Alias" class="profile-pic">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I'm Anna Alias, a professional with experience in community development, project management, and sustainability initiatives. Explore my work and background.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Master of Social Work (Community Development) from Loyola College of Social Science.</p>
+        <p>BSc. Chemistry from Union Christian College.</p>
+        <p>Passionate about environmental sustainability, social work, and corporate social responsibility.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <ul>
+            <li><strong>Associate Resource Development</strong> - Indian Institute for Human Settlements</li>
+            <li><strong>Senior Project Executive</strong> - ExNoRa International Foundation</li>
+            <li><strong>Programme Manager</strong> - Agra Catholic Diocese Samaj Seva Santhan</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Project Management</li>
+            <li>Networking</li>
+            <li>Leadership</li>
+            <li>Teamwork</li>
+            <li>Microsoft Office (Excel, Word)</li>
+            <li>Time Management</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Fundraising Essentials Certificate Program</li>
+            <li>Introduction to ESG</li>
+        </ul>
+    </section>
+
+    <section id="project1">
+        <h2>Community Development</h2>
+        <p>Worked on various social impact projects to improve community well-being.</p>
+    </section>
+
+    <section id="project2">
+        <h2>Environmental Sustainability</h2>
+        <p>Implemented strategies to promote sustainable development.</p>
+    </section>
+
+    <section id="project3">
+        <h2>Women Empowerment</h2>
+        <p>Focused on projects that uplift and empower women in society.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:annaalias130@gmail.com">annaalias130@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/anna-alias-001719209" target="_blank" rel="noopener noreferrer">linkedin.com/in/anna-alias</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Anna Alias | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const dropdownToggle = document.querySelector(".dropdown-toggle");
+            const dropdownMenu = document.querySelector(".dropdown-menu");
+            
+            dropdownToggle.addEventListener("click", function(event) {
+                event.preventDefault();
+                dropdownMenu.style.display = (dropdownMenu.style.display === "block") ? "none" : "block";
+                event.stopPropagation(); // Prevent immediate closing
+            });
+    
+            document.addEventListener("click", function(event) {
+                if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.style.display = "none";
+                }
+            });
+    
+            // Close dropdown when clicking outside
+            document.addEventListener("touchstart", function(event) {
+                if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.style.display = "none";
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
