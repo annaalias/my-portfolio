@@ -626,3 +626,31 @@ img {
   height: auto;
   margin-bottom: 1rem;
 }
+
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  gap: 1rem; /* Add some space between images */
+  padding: 1rem 0;
+}
+
+.journey__image {
+  flex: 0 0 auto; /* Prevent shrinking and ensure images stay inline */
+  width: 300px; /* Adjust the width of images as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add some shadow */
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  height: 6px; /* Height of the horizontal scrollbar */
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background-color: #888; /* Scrollbar thumb color */
+  border-radius: 3px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Scrollbar track color */
+}
