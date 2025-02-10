@@ -621,3 +621,8 @@ img {
 }
 
 
+.journey__logo {
+  width: 120px; /* Adjust the size as needed */
+  height: auto;
+  margin-bottom: 1rem;
+}
